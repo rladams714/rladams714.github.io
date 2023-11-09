@@ -38,7 +38,7 @@ input, textarea {
           user-select: auto;
 }
 
-body {
+.title {
   font-family: "Oranienbaum", serif;
 }
 
@@ -91,4 +91,39 @@ h2 {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 12px;
+}
+
+.home {
+  position: absolute;
+  top: 8%;
+  left: 14%;
+  color: white;
+  font-family: "Cantarell", sans-serif;
+  font-size: 24px;
+}
+
+.portfolio {
+  position: absolute;
+  top: 8%;
+  left: 45%;
+  color: white;
+  font-family: "Cantarell", sans-serif;
+  font-size: 24px;
+}
+
+.about {
+  position: absolute;
+  top: 8%;
+  left: 81%;
+  color: white;
+  font-family: "Cantarell", sans-serif;
+  font-size: 24px;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=index.css.map */
