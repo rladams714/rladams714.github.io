@@ -55,21 +55,23 @@ h2{
 
 .grow { 
     transition: all .2s ease-in-out; 
+    span{
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-family: 'Cantarell', sans-serif;
+        font-size: 24px;
+        z-index: 2;
+    }
+    &:hover { 
+        transform: scale(1.1); 
+        }
     }
 
-span{
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-family: 'Cantarell', sans-serif;
-    font-size: 24px;
-    z-index: 2;
-}
-    &:hover { 
-    transform: scale(1.1); 
-    }
+
+
 
 
     &::after{
@@ -81,7 +83,7 @@ span{
         height: 100%;
         background-image: linear-gradient(120deg, #401D5C66, #401D5C66);
         opacity: .7;
-        
+        pointer-events: none;
     }
 }
 
