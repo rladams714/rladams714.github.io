@@ -102,6 +102,7 @@ input, textarea {
   color: white;
   font-family: "Cantarell", sans-serif;
   font-size: 24px;
+  z-index: 2;
 }
 .banner:hover {
   transform: scale(1.1);
