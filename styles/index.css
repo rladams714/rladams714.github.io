@@ -119,6 +119,6 @@ input, textarea {
   pointer-events: none;
 }
 
-.aboutheader {
+.aboutbody {
   background: var(--hue, linear-gradient(180deg, #8148AE 0%, #A740A2 100%));
 }/*# sourceMappingURL=index.css.map */
