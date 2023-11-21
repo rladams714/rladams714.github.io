@@ -121,4 +121,22 @@ input, textarea {
 
 .aboutbody {
   background: var(--hue, linear-gradient(180deg, #8148AE 0%, #A740A2 100%));
+}
+.aboutbody .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+.aboutbody .header span {
+  position: absolute;
+  top: 50px;
+  left: 20%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: "Cantarell", sans-serif;
+  font-size: 24px;
+  z-index: 2;
 }/*# sourceMappingURL=index.css.map */
