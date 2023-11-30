@@ -1,21 +1,92 @@
 .aboutbody{
     background: var(--hue, linear-gradient(180deg, #8148AE 0%, #A740A2 100%));
+    overflow: hidden;
 
     .header{
+        position: absolute;
+        top: 50px;
+        left: 20%;
+        transform: translateX(-50%);
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         object-fit: cover;
         overflow: hidden;
+        a{
+            text-decoration: none;
+        }
         span{
-            position: absolute;
-            top: 50px;
-            left: 20%;
-            transform: translateX(-50%);
-            color: white;
             font-family: 'Cantarell', sans-serif;
             font-size: 24px;
-            z-index: 2;
+            color: white;
         }
     }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        padding-left: 10%;
+        padding-right: 45%;
+        margin-top: 10%;
+
+        h1{
+            color: #FFF;
+            font-family: Oranienbaum;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 3%;
+        }
+        .sub{
+            color: #FFF;
+            font-family: Oranienbaum;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 3%;
+        }
+        p{
+            color: #FFF;
+            font-family: Cantarell;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 3%;
+        }
+        .contact{
+            color: #FFF;
+            font-family: Cantarell;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 3%;
+        }
+        .socials{
+            color: #FFF;
+            font-family: Cantarell;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;    
+        }
+    }
+
+    .picture{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10%;
+        
+        img{
+            border-radius: 50%;
+            max-width: 30%;
+            max-height: 30%;
+        }
+    }
+
 }
