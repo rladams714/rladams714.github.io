@@ -285,10 +285,16 @@ body {
   margin-bottom: 50px;
 }
 .aboutbody .column {
-  flex: 100%;
-  max-width: 100%;
+  flex: 33.33%;
+  max-width: 33.33%;
   padding: 0 10px;
   position: relative;
+}
+@media screen and (min-width: 430px) {
+  .aboutbody .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 .aboutbody .column img {
   margin-top: 8px;

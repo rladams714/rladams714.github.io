@@ -42,10 +42,10 @@ h1{
     line-height: normal;
     letter-spacing: 27.5px; 
 
-    @include respond (430px){
+    @include respond ('430px'){
         font-size: 48px;
         letter-spacing: 10px;
-    }
+    };
 }
 h2{
     color: #FFF;
@@ -56,10 +56,10 @@ h2{
     letter-spacing: 12px;
     text-align: center;
 
-    @include respond (430px){
+    @include respond ('430px'){
         font-size: 36px;
         letter-spacing: 5px;
-    }
+    };
 }
 
 
@@ -75,16 +75,16 @@ h2{
         font-size: 24px;
         z-index: 2;
 
-        @include respond (430px){
+        @include respond ('430px'){
             font-size: 16px;
-        }
+        };
     }
     &:hover { 
         transform: scale(1.1); 
 
-        @include respond (430px){
+        @include respond ('430px'){
             transform: scale(1.05);
-        }
+        };
         }
     }
 

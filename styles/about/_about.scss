@@ -37,9 +37,9 @@ body{
             border-radius: 26px;
             background: #593081;
 
-            @include respond(430px){
+            @include respond('430px'){
                 font-size: 16px;
-            }
+            };
 
         }
 
@@ -50,10 +50,10 @@ body{
         padding-inline: 10%;
         gap: 50px;
 
-        @include respond(430px){
+        @include respond('430px'){
             display: flex;
             flex-direction: column;
-        }
+        };
     }
     
     .about{
@@ -73,9 +73,9 @@ body{
             line-height: normal;
             margin-bottom: 3%;
 
-            @include respond(430px){
+            @include respond('430px'){
                 font-size: 48px;
-            }
+            };
         }
         .sub{
             color: #FFF;
@@ -86,9 +86,9 @@ body{
             line-height: normal;
             margin-bottom: 3%;
 
-            @include respond(430px){
+            @include respond('430px'){
                 font-size: 30px;
-            }
+            };
         }
         p{
             color: #FFF;
@@ -99,9 +99,9 @@ body{
             line-height: normal;
             margin-bottom: 3%;
 
-            @include respond(430px){
+            @include respond('430px'){
                 font-size: 20px;
-            }
+            };
         }
         .contact{
             color: #FFF;
@@ -112,9 +112,9 @@ body{
             line-height: normal;
             margin-bottom: 3%;
 
-            @include respond(430px){
+            @include respond('430px'){
                 font-size: 24px;
-            }
+            };
         }
         .socials{
             color: #FFF;
@@ -124,9 +124,9 @@ body{
             font-weight: 500;
             line-height: normal;  
             
-            @include respond(430px){
+            @include respond('430px'){
                 font-size: 24px;
-            }
+            };
         }
     }
 
@@ -135,9 +135,9 @@ body{
         max-width: 400px;
         object-fit: contain;
 
-        @include respond(430px){
+        @include respond('430px'){
             margin-bottom: 30px;
-        }
+        };
         
         img{
             border-radius: 50%;
@@ -152,10 +152,15 @@ body{
         margin-bottom: 50px;
       }
       .column {
-        flex: 100%;
-        max-width: 100%;
+        flex: 33.33%;
+        max-width: 33.33%;
         padding: 0 10px;
         position: relative;
+
+        @include respond('430px'){
+          flex: 100%;
+          max-width: 100%;
+        };
       }
     
 
