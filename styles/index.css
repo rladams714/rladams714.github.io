@@ -82,6 +82,12 @@ input, textarea {
   line-height: normal;
   letter-spacing: 27.5px;
 }
+@media screen and (min-width: 430px) {
+  .banner h1 {
+    font-size: 48px;
+    letter-spacing: 10px;
+  }
+}
 .banner h2 {
   color: #FFF;
   font-size: 48px;
@@ -90,6 +96,12 @@ input, textarea {
   line-height: normal;
   letter-spacing: 12px;
   text-align: center;
+}
+@media screen and (min-width: 430px) {
+  .banner h2 {
+    font-size: 36px;
+    letter-spacing: 5px;
+  }
 }
 .banner .grow {
   transition: all 0.2s ease-in-out;
@@ -104,8 +116,18 @@ input, textarea {
   font-size: 24px;
   z-index: 2;
 }
+@media screen and (min-width: 430px) {
+  .banner .grow span {
+    font-size: 16px;
+  }
+}
 .banner .grow:hover {
   transform: scale(1.1);
+}
+@media screen and (min-width: 430px) {
+  .banner .grow:hover {
+    transform: scale(1.05);
+  }
 }
 .banner::after {
   content: "";
@@ -119,34 +141,60 @@ input, textarea {
   pointer-events: none;
 }
 
-.aboutbody {
+body {
   background: var(--hue, linear-gradient(180deg, #8148AE 0%, #A740A2 100%));
+}
+
+.aboutbody {
   overflow: hidden;
 }
 .aboutbody .header {
-  position: absolute;
   top: 50px;
   left: 10%;
+  padding: 50px 10%;
+  display: flex;
+  flex-direction: row;
 }
 .aboutbody .header a {
   text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  margin-right: 30px;
+  transition: all 0.2s ease-in-out;
+}
+.aboutbody .header a:hover {
+  transform: scale(1.1);
 }
 .aboutbody .header span {
   font-family: "Cantarell", sans-serif;
   font-size: 24px;
   color: white;
+  border: none;
+  border-width: 1px;
+  padding: 10px;
+  border-radius: 26px;
+  background: #593081;
+}
+@media screen and (min-width: 430px) {
+  .aboutbody .header span {
+    font-size: 16px;
+  }
+}
+.aboutbody .content {
+  display: flex;
+  padding-inline: 10%;
+  gap: 50px;
+}
+@media screen and (min-width: 430px) {
+  .aboutbody .content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .aboutbody .about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  padding-left: 10%;
-  padding-right: 45%;
-  margin-top: 10%;
+  max-width: 700px;
 }
 .aboutbody .about h1 {
   color: #FFF;
@@ -157,6 +205,11 @@ input, textarea {
   line-height: normal;
   margin-bottom: 3%;
 }
+@media screen and (min-width: 430px) {
+  .aboutbody .about h1 {
+    font-size: 48px;
+  }
+}
 .aboutbody .about .sub {
   color: #FFF;
   font-family: Oranienbaum;
@@ -165,6 +218,11 @@ input, textarea {
   font-weight: 400;
   line-height: normal;
   margin-bottom: 3%;
+}
+@media screen and (min-width: 430px) {
+  .aboutbody .about .sub {
+    font-size: 30px;
+  }
 }
 .aboutbody .about p {
   color: #FFF;
@@ -175,6 +233,11 @@ input, textarea {
   line-height: normal;
   margin-bottom: 3%;
 }
+@media screen and (min-width: 430px) {
+  .aboutbody .about p {
+    font-size: 20px;
+  }
+}
 .aboutbody .about .contact {
   color: #FFF;
   font-family: Cantarell;
@@ -184,6 +247,11 @@ input, textarea {
   line-height: normal;
   margin-bottom: 3%;
 }
+@media screen and (min-width: 430px) {
+  .aboutbody .about .contact {
+    font-size: 24px;
+  }
+}
 .aboutbody .about .socials {
   color: #FFF;
   font-family: Cantarell;
@@ -192,13 +260,164 @@ input, textarea {
   font-weight: 500;
   line-height: normal;
 }
+@media screen and (min-width: 430px) {
+  .aboutbody .about .socials {
+    font-size: 24px;
+  }
+}
 .aboutbody .picture {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 10%;
+  max-width: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (min-width: 430px) {
+  .aboutbody .picture {
+    margin-bottom: 30px;
+  }
 }
 .aboutbody .picture img {
   border-radius: 50%;
-  max-width: 30%;
-  max-height: 30%;
+}
+.aboutbody .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-bottom: 50px;
+}
+.aboutbody .column {
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 10px;
+  position: relative;
+}
+.aboutbody .column img {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.aboutbody .cher {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.aboutbody .cher:hover {
+  opacity: 0.5;
+}
+.aboutbody .mercy {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.aboutbody .mercy:hover {
+  opacity: 0.5;
+}
+.aboutbody .solomon {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.aboutbody .solomon:hover {
+  opacity: 0.5;
+}
+.aboutbody .midnight {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.aboutbody .midnight:hover {
+  opacity: 0.5;
+}
+.aboutbody .thumbnail {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.aboutbody .thumbnail:hover {
+  opacity: 0.5;
+}
+.aboutbody .frog {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.aboutbody .frog:hover {
+  opacity: 0.5;
+}
+.aboutbody .master {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.aboutbody .master:hover {
+  opacity: 0.5;
+}
+.aboutbody .topleft {
+  text-align: center;
+  font-family: Oranienbaum;
+  font-size: 24px;
+  color: #FFF;
+}
+.aboutbody .middleleft {
+  text-align: center;
+  font-family: Oranienbaum;
+  font-size: 24px;
+  color: #FFF;
+}
+.aboutbody .bottomleft {
+  text-align: center;
+  font-family: Oranienbaum;
+  font-size: 24px;
+  color: #FFF;
+}
+.aboutbody .topright {
+  text-align: center;
+  font-family: Oranienbaum;
+  font-size: 24px;
+  color: #FFF;
+}
+.aboutbody .middleright {
+  text-align: center;
+  font-family: Oranienbaum;
+  font-size: 24px;
+  color: #FFF;
+}
+.aboutbody .bottomright {
+  text-align: center;
+  font-family: Oranienbaum;
+  font-size: 24px;
+  color: #FFF;
+}
+.aboutbody .bottomleft {
+  text-align: center;
+  font-family: Oranienbaum;
+  font-size: 24px;
+  color: #FFF;
+}
+.aboutbody .middle {
+  text-align: center;
+  font-family: Oranienbaum;
+  font-size: 24px;
+  color: #FFF;
 }/*# sourceMappingURL=index.css.map */
